@@ -2,16 +2,16 @@
 Host PiHole
     HostName 192.168.86.229
     User jeffp2662
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
 Host Print-Server
     HostName 192.168.86.233
     User pi
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
 Host Laptop
     HostName 192.168.86.211
     User jeffp2662
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
 Host Desktop
     HostName 192.168.86.169
     User jeffp2662
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
