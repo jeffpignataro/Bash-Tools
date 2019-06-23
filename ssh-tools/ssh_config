@@ -1,0 +1,25 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host PiHole
+    HostName 192.168.86.229
+    User jeffp2662
+    IdentityFile ~/.ssh/home_key.pub
+Host Print-Server
+    HostName 192.168.86.233
+    User pi
+    IdentityFile ~/.ssh/home_key.pub
+Host Laptop
+    HostName 192.168.86.211
+    User jeffp2662
+    IdentityFile ~/.ssh/home_key.pub
+Host Desktop
+    HostName 192.168.86.169
+    User jeffp2662
+    IdentityFile ~/.ssh/home_key.pub
+Host Work
+    HostName pignataro-j.desktop.sa.ucsb.edu
+    User sa\pignataro-j
+    IdentityFile ~/.ssh/home_key.pub
+Host DietPi
+    HostName 192.168.86.244
+    User dietpi
+    IdentityFile ~/.ssh/home_key.pub
