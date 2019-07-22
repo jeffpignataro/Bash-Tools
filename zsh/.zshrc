@@ -73,6 +73,7 @@ plugins=(
     aws        
     bundler
     colorize
+    command_not_found
     copydir
     copyfile
     cp
@@ -103,8 +104,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 source ~/.bash_aliases
-
-source /etc/zsh_command_not_found
 
 # User configuration
 
