@@ -1,3 +1,5 @@
+wget https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US --output-document=fflatest.tar.bz2
+
 FFVERSION=$1
 FFBUILD=$2
 
@@ -12,4 +14,4 @@ fi
 
 FFFILENAME="firefox-$FFVERSION.$FFBUILD.tar.bz2"
 
-sudo tar --strip-components=1 -C /opt/firefox-developer/ -xjvf ~/Downloads/$FFFILENAME
+#sudo tar --strip-components=1 -C /opt/firefox-developer/ -xjvf ~/Downloads/$FFFILENAME
