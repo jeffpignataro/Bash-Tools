@@ -102,8 +102,9 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-source ~/.bash_aliases
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
 
 # User configuration
 
@@ -130,3 +131,10 @@ source ~/.bash_aliases
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [ -f ~/.zsh/completion ]; then
+fi
+fpath=(~/.zsh/completion $fpath)
+
+if [ -f /DietPi/dietpi/dietpi-cpuinfo ]; then
+    sudo /DietPi/dietpi/dietpi-cpuinfo
+fi
