@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="/home/dietpi/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -70,41 +70,15 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    aws        
-    bundler
-    colorize
-    command_not_found
-    copydir
-    copyfile
-    cp
     docker
     docker-compose
-    docker-machine
-    dotenv
-    drush
-    git
-    github
-    gnu-utils
-    gulp
-    jsontools
-    kubectl
-    man
-    npm
-    nvm
-    osx
-    pip
-    pylint
-    python
-    sudo
-    systemd
-    vscode
+    colorize
     zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
+
+source ~/.bash_aliases
 
 # User configuration
 
@@ -131,10 +105,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [ -f ~/.zsh/completion ]; then
-fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#source ~/.p10k.zsh
+
 fpath=(~/.zsh/completion $fpath)
 
-if [ -f /DietPi/dietpi/dietpi-cpuinfo ]; then
-    sudo /DietPi/dietpi/dietpi-cpuinfo
-fi
+sudo /DietPi/dietpi/dietpi-cpuinfo
